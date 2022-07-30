@@ -7,7 +7,11 @@
   // transform: translate(-100%, 20px);
   // transform: translateY(100px);
   // 物体を回転させる
-  transform: rotate(30deg);
+  // transform: rotate(30deg);
   // 移動・回転させる始点
   transform-origin: center center;
+  // 並行移動
+  // transform: skew(40deg);
+  // 拡大、複数使うなら半角あける
+  transform: scale(2) translate(40px);
 }
