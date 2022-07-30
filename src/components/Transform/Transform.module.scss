@@ -3,4 +3,11 @@
   height: 100px;
   margin: 0 auto;
   background-color: orangered;
+  // translateで物体を移動させる
+  // transform: translate(-100%, 20px);
+  // transform: translateY(100px);
+  // 物体を回転させる
+  transform: rotate(30deg);
+  // 移動・回転させる始点
+  transform-origin: center center;
 }
