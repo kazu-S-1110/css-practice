@@ -1,10 +1,11 @@
 import "./App.css";
-import { Transform } from "./components/Transform/Transform";
+import { SlideButton } from "./components/SlideButton/SlideButton";
 
 function App() {
   return (
     <div className="App">
-      <Transform />
+      {/* <Transform /> */}
+      <SlideButton />
     </div>
   );
 }
