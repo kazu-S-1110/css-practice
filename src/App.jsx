@@ -1,11 +1,12 @@
 import "./App.css";
-import { SlideButton } from "./components/SlideButton/SlideButton";
+import { ReactSelect } from "./components/ReactSelect/ReactSelect";
 
 function App() {
   return (
     <div className="App">
       {/* <Transform /> */}
-      <SlideButton />
+      {/* <SlideButton /> */}
+      <ReactSelect />
     </div>
   );
 }
