@@ -11,7 +11,7 @@ export const ReactSelect = () => {
   ];
   return (
     <>
-      <Select options={options} styles={{ width: "400px" }} />
+      <Select options={options} />
     </>
   );
 };
