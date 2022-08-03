@@ -1,5 +1,5 @@
 import "./App.css";
-import { ReactSelect } from "./components/ReactSelect/ReactSelect";
+import { Loader } from "./components/Loader/Loader";
 import { SlideButton } from "./components/SlideButton/SlideButton";
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
     <div className="App">
       {/* <Transform /> */}
       <SlideButton />
-      <ReactSelect />
+      {/* <ReactSelect /> */}
+      <Loader />
     </div>
   );
 }
