@@ -18,19 +18,25 @@
   }
 }
 
+@mixin animation($name, $duration: 2s) {
+  animation-name: $name;
+  animation-duration: $duration;
+}
+
 .rect {
   display: inline-block;
   width: 100px;
   height: 100px;
   background-color: black;
-  animation: sk-bouncedelay 1.4s;
-  animation-timing-function: ease;
+  @include animation($name: sk-bouncedelay);
+  // animation: sk-bouncedelay 1.4s;
+  // animation-timing-function: ease;
   //アニメーションが開始するまでの遅延時間
-  animation-delay: 1s;
+  // animation-delay: 1s;
   // 繰り返し回数
   animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
+  // animation-direction: alternate;
+  // animation-fill-mode: forwards;
 }
 .paused {
   animation-play-state: paused;
