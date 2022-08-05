@@ -18,9 +18,27 @@
   }
 }
 
-@mixin animation($name, $duration: 2s) {
-  animation-name: $name;
-  animation-duration: $duration;
+@mixin animation(
+  $name,
+  $duration: 2s,
+  $timingFunction: ease,
+  $delay: 0s,
+  $iterationCount: 1,
+  $direction: normal,
+  $fillMode: forwards
+) {
+  // animation-name: $name;
+  // animation-duration: $duration;
+  // sass上ではハイフンのものは省略して書くことが可能
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timingFunction;
+    delay: $delay;
+    iteration-count: $iterationCount;
+    direction: $direction;
+    fill-mode: $fillMode;
+  }
 }
 
 .rect {
@@ -34,7 +52,7 @@
   //アニメーションが開始するまでの遅延時間
   // animation-delay: 1s;
   // 繰り返し回数
-  animation-iteration-count: infinite;
+  // animation-iteration-count: infinite;
   // animation-direction: alternate;
   // animation-fill-mode: forwards;
 }
