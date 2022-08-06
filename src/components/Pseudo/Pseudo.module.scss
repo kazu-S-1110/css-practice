@@ -1,0 +1,18 @@
+a {
+  margin: 4px;
+  &:visited {
+    color: red;
+  }
+
+  &:hover {
+    color: orange;
+  }
+
+  &:focus {
+    color: green;
+  }
+
+  &:active {
+    color: brown;
+  }
+}
