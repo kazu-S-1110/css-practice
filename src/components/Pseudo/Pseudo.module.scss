@@ -15,4 +15,15 @@ a {
   &:active {
     color: brown;
   }
+  // 偶数だけ振る(evenでも可)
+  &:nth-child(2n) {
+    color: aqua;
+  }
+  // 奇数になる
+  &:nth-child(odd) {
+    color: cadetblue;
+  }
+  &:nth-child(4) {
+    color: purple;
+  }
 }
